@@ -2,6 +2,7 @@ import objectpack.ui
 from django.contrib.auth import models
 from objectpack.actions import ObjectPack
 
+from .controller import observer
 from .ui import UserAddWindow
 
 
@@ -36,5 +37,6 @@ class GroupPack(ObjectPack):
 class PermissionPack(ObjectPack):
     model = models.Permission
 
+    add_window = edit_window = objectpack.ui.ModelEditWindow.fabricate(model, model_register=observer)
     add_to_desktop = True
     add_to_menu = True

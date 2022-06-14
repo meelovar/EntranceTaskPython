@@ -1,4 +1,6 @@
 .idea/
 _venv/
+*.egg-info/
 
+*.pyc
 *.sqlite3

@@ -84,12 +84,12 @@ class PermissionPack(ObjectPack):
             "header": "Name"
         },
         {
-            "data_index": "codename",
-            "header": "Codename"
-        },
-        {
             "data_index": "content_type",
             "header": "Content type"
+        },
+        {
+            "data_index": "codename",
+            "header": "Codename"
         }
     )
 
